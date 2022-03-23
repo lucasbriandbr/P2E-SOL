@@ -1,0 +1,35 @@
+.Header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+}
+
+.firstSection {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 1px solid white;
+    justify-content: flex-start;
+}
+
+.centerSection {
+    display: flex;
+    align-items: center;
+    flex: 3;
+    border: 1px solid white;
+    justify-content: center;
+}
+
+.lastSection {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 1px solid white;
+    justify-content: flex-end;
+}
