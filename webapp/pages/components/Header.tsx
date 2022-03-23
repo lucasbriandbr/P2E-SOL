@@ -6,19 +6,25 @@ const Header = () => (
     
     <div className={styles.firstSection}>
 
-      <p>firstSection</p>
+      <p>Home</p>
 
     </div>
 
     <div className={styles.centerSection}>
 
-      <p>centerSection</p>
+      <p>Mint</p>
+
+      <p>About</p>
+
+      <p>Gallery</p>
+
+      <p>Play</p>
 
     </div>
 
     <div className={styles.lastSection}>
 
-      <p>lastSection</p>
+      <p>Wallet</p>
 
     </div>
 
