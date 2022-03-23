@@ -3,7 +3,6 @@
     width: 100%;
     height: 70px;
     flex-direction: row;
-    padding: 15px;
     position: fixed;
 
     background: rgba( 255, 255, 255, 0.25 );
@@ -17,23 +16,34 @@
     display: flex;
     align-items: center;
     flex: 1;
-    border: 1px solid black;
     justify-content: flex-start;
+    margin-left: 7.5px;
 }
 
 .centerSection {
     display: flex;
     align-items: center;
     flex: 3;
-    border: 1px solid black;
     justify-content: center;
-    margin: 0px 15px 0px 15px;
 }
 
 .lastSection {
     display: flex;
     align-items: center;
     flex: 1;
-    border: 1px solid black;
     justify-content: flex-end;
+    margin-right: 7.5px;
+}
+
+.menuLink {
+    color: white;
+    background-color: #222222;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15.5px 0px 15.5px;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 8px 0 0 0 #222222, -8px 0 0 0 #222222, 0 -8px 0 0 #222222, 0 8px 0 0 #222222, 6px 4px 0 0 #222222, -6px 4px 0 0 #222222, 4px -6px 0 0 #222222, 4px 6px 0 0 #222222, 6px -4px 0 0 #222222, -6px -4px 0 0 #222222, -4px -6px 0 0 #222222, -4px 6px 0 0 #222222;
 }

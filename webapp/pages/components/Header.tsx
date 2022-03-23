@@ -6,25 +6,25 @@ const Header = () => (
     
     <div className={styles.firstSection}>
 
-      <p>Home</p>
+      <a className={styles.menuLink} href={'../'}>Home</a>
 
     </div>
 
     <div className={styles.centerSection}>
 
-      <p>Mint</p>
+      <a className={styles.menuLink} href={'../mint'}>Mint</a>
 
-      <p>About</p>
+      <a className={styles.menuLink} href={'../about'}>About</a>
 
-      <p>Gallery</p>
+      <a className={styles.menuLink} href={'../gallery'}>Gallery</a>
 
-      <p>Play</p>
+      <a className={styles.menuLink} href={'../play'}>Play</a>
 
     </div>
 
     <div className={styles.lastSection}>
 
-      <p>Wallet</p>
+      <p className={styles.menuLink}>Wallet</p>
 
     </div>
 

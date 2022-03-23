@@ -21,10 +21,10 @@ const contentStyle = {
 const Layout = props => (
   <div className="Layout" style={layoutStyle}>
     <Header />
-    {/* <div className="Content" style={contentStyle}>
+    <div className="Content" style={contentStyle}>
       {props.children}
     </div>
-    <NavBar /> */}
+    <NavBar />
   </div>
 );
 
