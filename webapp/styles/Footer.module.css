@@ -1,0 +1,95 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    font-family: System,monospace;
+}
+
+.sectionUne {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #424242;
+    flex-direction: row;
+    padding: 50px 25px 50px 25px;
+}
+
+.sectionDeux {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #424242;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+.linksBlock {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    margin: 0px 25px 0px 25px;
+}
+
+.linksTheBloc {
+    border: 1px solid #424242;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 3;
+    text-align: center;
+}
+
+.theLink {
+    transition: all 0.3s ease-in-out;
+}
+
+.theLink:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 50%;
+}
+
+/* Solana Price Block */
+
+.solanaPriceBloc {
+    border: 1px solid #424242;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    border-radius: 10px;
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.solanaPriceBloc:hover {
+    background-color: #424242;
+    transition: all 0.3s ease-in-out;
+}
+
+.solanaIcon {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.solanaPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.solanaText {
+    text-align: center;
+}

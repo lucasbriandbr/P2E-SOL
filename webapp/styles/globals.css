@@ -2,8 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar  {
+  display: none;
 }
 
 a {
@@ -13,4 +19,41 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Make it a marquee */
+.marquee {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  padding: 15px;
+  backdrop-filter: blur( 5px );
+}
+
+.marquee span {
+  /* overflow: hidden; */
+  /* width: 100%; */
+  animation: marquee 10s linear infinite;
+  width: 20%;
+  padding:0px 25px 0px 25px;
+  opacity: 50%;
+}
+
+.marquee .span {
+  /* overflow: hidden; */
+  /* width: 100%; */
+  animation: marquee 10s linear infinite;
+  overflow: visible;
+  width: 20%;
+  padding:0px 25px 0px 25px;
+  opacity: 50%;
+}
+
+/* Make it move */
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
 }

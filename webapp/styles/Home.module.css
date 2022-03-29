@@ -1,116 +1,324 @@
-.container {
-  padding: 0 2rem;
+@font-face {
+    font-family: "Alagard";
+    src:url("../public/fonts/alagard.ttf") format("truetype");
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@font-face {
+    font-family: "eightbitdragon";
+    src:url("../public/fonts/SuperLegendBoy-4w8Y.ttf") format("truetype");
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+@font-face {
+    font-family: "starttoplay";
+    src:url("../public/fonts/PressStart2P-vaV7.ttf") format("truetype");
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+.Space {
+    display: flex;
+    height: 70px;
     width: 100%;
+    /* background-color: #474b69; */
+    background: rgb(79,81,112);
+    background: linear-gradient(0deg, rgba(79,81,112,1) 0%, rgba(50,53,91,1) 50%, rgba(30,37,91,1) 100%);
+}
+
+/* First Section */
+
+.FirstSection {
+    display: flex;
+    background-image: url('../public/images/15ede0ac-6283-49cc-827e-1495d1e34ee7.gif');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Alagard';
+}
+
+.collectionTitle {
+    font-size: 3em;
+}
+
+.MainTitle {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.collectionLogos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkIcon {
+    display: flex;
+    overflow: hidden;
+    margin: 0px 18px 0px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 4px 0 0 0 #222222, -4px 0 0 0 #222222, 0 -4px 0 0 #222222, 0 4px 0 0 #222222; */
+}
+
+.linkIcon:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 50%;
+}
+
+/* Second Section */
+
+.SecondSection {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-image: url('../public/images/groupebro.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+    font-family: 'eightbitdragon';
+    font-size: 0.75em;
+}
+
+/* Third section bro */
+
+.ThirdSection {
+    padding: 30px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #424242;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.containerleft {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    left: 0;
+}
+
+.containerleft::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #424242;
+  /* top: 15px; */
+  top: 45%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.containerright {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    left: 50%;
+}
+
+.containerright::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #424242;
+  /* top: 15px; */
+  top: 45%;
+  border-radius: 50%;
+  z-index: 1;
+  left: -12px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .timeline::after {
+  left: 31px;
   }
+
+  .containerright, .containerleft {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  .containerleft::after, .containerright::after {
+  left: 18px;
+  }
+
+  .containerright {
+  left: 0%;
+  }
+}
+
+.textBlur {
+    padding: 30px;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    font-family: System,monospace;
+    background-color: rgba(179, 179, 179, 0.25);
+}
+
+.roadmaptitre {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alagard";
+}
+
+.roadmapParagraphe {
+    font-family: System,monospace;
+}
+
+#summer2022 {
+    background-image: url('../public/images/a-lRljfH5WY91x4rhXXr2Y8amg5SmyNfrEo7ZUk40iI.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#winter2022 {
+    background-image: url('../public/images/Ipp25S-dDTBm8n7KnCByDJdyev56-HYAyM4m0wZ5wDM.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#summer2023 {
+    background-image: url('../public/images/YTZaBoLx4NvZ9hXCPYZztgzSDxoZlm90bZNc9ahLtUY.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#winter2023 {
+    background-image: url('../public/images/4419.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.beepbop {
+    font-family: 'starttoplay';
+    font-size: 0.65em;
+}
+
+/* Fourth Section Broskiiiiii */
+
+.FourthSection {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../public/images/Ipp25S-dDTBm8n7KnCByDJdyev56-HYAyM4m0wZ5wDM.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.mainpageAboutOrigin {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* border: 1px solid #222222; */
+}
+
+.mainpageAboutMechanics {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* border: 1px solid #222222; */
+}
+
+.AboutImage {
+    display: flex;
+    flex: 1;
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.AboutText {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    flex: 1;
+    padding: 30px;
+    font-family: System,monospace;
+
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    background-color: rgba(179, 179, 179, 0.25);
+}
+
+.aboutTitre {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alagard";
+    margin-top: 30px;
+}
+
+.backgroundAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /* background-image: url('../public/images/Ipp25S-dDTBm8n7KnCByDJdyev56-HYAyM4m0wZ5wDM.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box; */
+}
+
+.texteAboutPadding {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.texteAboutPadding div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px;
 }

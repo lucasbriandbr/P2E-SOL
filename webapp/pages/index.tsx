@@ -1,13 +1,231 @@
 import type { NextPage } from 'next'
-import { BrowserRouter as Router } from 'react-router-dom'
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image';
 
 // pages/index.js
 
 import Layout from "./components/Layout";
 
-const Index = () => <Layout>Welcome to WHATABYTE!</Layout>;
+const Index = () => (
+<Layout>
+
+    <div className={styles.Space}></div>
+
+    <div className={styles.FirstSection}>
+
+        <div className={styles.MainTitle}>
+
+            <h1 className={styles.collectionTitle}>Collection Name</h1>
+
+            <div className={styles.collectionLogos}>
+
+                <a href={'https://magiceden.io/'} className={styles.linkIcon}>
+                    <Image src={'/icon/magiceden-icon.png'} alt='magiceden-icon' width={35} height={35}/>
+                </a>
+
+                <a href={'https://discord.gg/Wycyn7bUYq'} className={styles.linkIcon}>
+                    <Image src={'/icon/discorde-icon.png'} alt='discord-icon' width={35} height={35}/>
+                </a>
+
+                <a href={'https://medium.com/'} className={styles.linkIcon}>
+                    <Image src={'/icon/medium-icon.png'} alt='medium-icon' width={35} height={35}/>
+                </a>
+
+                <a href={'https://twitter.com/NamedCollection'} className={styles.linkIcon}>
+                    <Image src={'/icon/twitter-icon.png'} alt='twitter-icon' width={35} height={35}/>
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div className={styles.SecondSection}>
+
+        <p className="marquee">
+            
+            <span>Mint planned for this summer</span>
+            
+            <span className='span'>Mint planned for this summer</span>
+            
+            <span>Mint planned for this summer </span>
+            
+            <span className='span'>Mint planned for this summer</span>
+            
+            <span>Mint planned for this summer </span>
+            
+            <span className='span'>Mint planned for this summer</span>
+            
+            <span>Mint planned for this summer </span>
+            
+            <span className='span'>Mint planned for this summer</span>
+            
+            <span>Mint planned for this summer </span>
+            
+            <span className='span'>Mint planned for this summer</span>
+
+        </p>
+        
+    </div>
+
+    <div className={styles.ThirdSection}>
+
+        <div className={styles.roadmaptitre}>
+
+            <h1>Roadmap</h1>
+
+            <p className={styles.roadmapParagraphe}><span className={styles.beepbop}>Beep-bop !</span> Why the hell is everyone so f*cking excited about our project ?</p>
+
+        </div>
+        
+        <div className={styles.timeline}>
+
+            <div className={styles.containerleft}>
+
+                <div id={styles.summer2022}>
+
+                    <div className={styles.textBlur}>
+
+                        <h4>Summer 2022</h4>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className={styles.containerright}>
+
+                <div id={styles.winter2022}>
+
+                    <div className={styles.textBlur}>
+
+                        <h4>Winter 2022</h4>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className={styles.containerleft}>
+
+                <div id={styles.summer2023}>
+
+                    <div className={styles.textBlur}>
+
+                        <h4>Summer 2023</h4>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className={styles.containerright}>
+
+                <div id={styles.winter2023}>
+
+                    <div className={styles.textBlur}>
+
+                        <h4>Winter 2023</h4>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            {/* <div className={styles.containerleft}>
+
+                <div className={styles.content}>
+
+                    <h2>2011</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                
+                </div>
+
+            </div>
+
+            <div className={styles.containerright}>
+
+                <div className={styles.content}>
+
+                    <h2>2007</h2>
+                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                
+                </div>
+
+            </div> */}
+
+        </div>
+
+    </div>
+
+    <div className={styles.FourthSection}>
+
+        <div className={styles.backgroundAbout}>
+
+            <div className={styles.mainpageAboutOrigin}>
+
+                {/* <img className={styles.AboutImage} src='/images/FM8SHUtXoAclSfy.jpg' alt='Robot Picture'/> */}
+
+                <div className={styles.AboutText}>
+
+                    <div className={styles.aboutTitre}>
+
+                        <h1>Origin and Mechanics</h1>
+
+                        <p className={styles.roadmapParagraphe}><span className={styles.beepbop}>Beep-bop !</span> That looks cool but... wtf are the Collection Name ???</p>
+
+                    </div>
+
+                    <div className={styles.texteAboutPadding}>
+
+                        <div>
+
+                            <h3>Origin</h3>
+
+                            <p>A la fin du 18 ème siècle une nouvelle étoile apparut dans le ciel. La commença l&apos;invasion de la terre.</p>
+
+                            <p>Se battant pour préserver leurs ressources, Les Hommes tentent avec grande difficulté d&apos;empêcher les robots de voler les ressources de la terre.</p>
+
+                            <p>Les robots veulent utiliser ces ressources pour fertiliser leur planète et la rendre à nouveau habitable après que la pollution l&apos;ait détruite.</p>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Mécaniques</h3>
+
+                            <p>Voila les mécaniques du jeu blablabla</p>
+
+                            <p>Différentes classes de robots se battent pour récupérer les ressources que les hommes refusent de leur donner : Les plantes, de petits animaux et petits poissons.</p>
+
+                            <p>Les robots de combat sont séparés en deux classes : les tanks et les robots agiles, ce à quoi viendront s&apos;ajouter les drônes, classe qui est la pour servir de soutien et améliorer les capacités.</p>
+
+                            <p>Enfin, les mineurs extraient des ressources utiles comme le fer pour réparer et maintenir les robots.</p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</Layout>
+);
 
 export default Index;

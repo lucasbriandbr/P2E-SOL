@@ -3,28 +3,17 @@
 import Head from "next/head";
 
 import Header from "./Header";
-import NavBar from "./NavBar";
+import Footer from "./Footer";
 
-const layoutStyle = {
-  display: "flex",
-  flexDirection: "column",
-  height: "100%",
-  width: "100%"
-};
-
-const contentStyle = {
-  flex: 1,
-  display: "flex",
-  flexDirection: "column"
-};
+import styles from "../../styles/Layout.module.css"
 
 const Layout = props => (
-  <div className="Layout" style={layoutStyle}>
+  <div className={styles.layoutStyle}>
     <Header />
-    <div className="Content" style={contentStyle}>
+    <div className={styles.contentPage}>
       {props.children}
     </div>
-    <NavBar />
+    <Footer />
   </div>
 );
 

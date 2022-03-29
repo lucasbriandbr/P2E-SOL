@@ -1,7 +1,6 @@
 // components/Header.js
-import styles from '../../styles/Header.module.css'
 
-import { useEffect } from 'react'
+import styles from '../../styles/Header.module.css'
 import { useRouter } from 'next/router'
 
 function Header() {
@@ -14,7 +13,7 @@ function Header() {
 
   return (
 
-    <div>
+    <div className={styles.Element}>
 
       <div className={styles.Header}>
         
@@ -26,19 +25,17 @@ function Header() {
     
         <div className={styles.centerSection}>
     
-          <button className={styles.menuLink} onClick={() => changeUrl('/mint')}>Mint</button>
+          <button className={styles.menuLinkDisabled} onClick={() => changeUrl('/mint')} disabled>Mint</button>
     
-          <button className={styles.menuLink} onClick={() => changeUrl('/about')}>About</button>
+          <button className={styles.menuLinkDisabled} onClick={() => changeUrl('/gallery')} disabled>Gallery</button>
     
-          <button className={styles.menuLink} onClick={() => changeUrl('/gallery')}>Gallery</button>
-    
-          <button className={styles.menuLink} onClick={() => changeUrl('/play')}>Play</button>
+          <button className={styles.menuLinkDisabled} onClick={() => changeUrl('/play')} disabled>Play</button>
     
         </div>
     
         <div className={styles.lastSection}>
     
-          <button className={styles.menuLink}>Wallet</button>
+          <button className={styles.menuLink}>Connect</button>
     
         </div>
     
