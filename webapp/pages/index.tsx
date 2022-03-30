@@ -6,6 +6,14 @@ import Image from 'next/image';
 
 import Layout from "./components/Layout";
 
+// élements de la page
+
+// import FirstSection from "./mainpage-components/FirstSection";
+// import SecondSection from "./mainpage-components/SecondSection";
+// import ThirdSection from "./mainpage-components/ThirdSection";
+// import FourthSection from "./mainpage-components/FourthSection";
+// import FifthSection from "./mainpage-components/FifthSection";
+
 const Index = () => (
 <Layout>
 
@@ -142,28 +150,6 @@ const Index = () => (
 
             </div>
 
-            {/* <div className={styles.containerleft}>
-
-                <div className={styles.content}>
-
-                    <h2>2011</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                
-                </div>
-
-            </div>
-
-            <div className={styles.containerright}>
-
-                <div className={styles.content}>
-
-                    <h2>2007</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                
-                </div>
-
-            </div> */}
-
         </div>
 
     </div>
@@ -174,15 +160,13 @@ const Index = () => (
 
             <div className={styles.mainpageAboutOrigin}>
 
-                {/* <img className={styles.AboutImage} src='/images/FM8SHUtXoAclSfy.jpg' alt='Robot Picture'/> */}
-
                 <div className={styles.AboutText}>
 
                     <div className={styles.aboutTitre}>
 
                         <h1>Origin and Mechanics</h1>
 
-                        <p className={styles.roadmapParagraphe}><span className={styles.beepbop}>Beep-bop !</span> That looks cool but... wtf are the Collection Name ???</p>
+                        <p className={styles.roadmapParagraphe}>That looks cool but... wtf are the *Collection Name* ??? <span className={styles.beepbop}>Beep-bop !</span></p>
 
                     </div>
 
@@ -223,6 +207,92 @@ const Index = () => (
 
         </div>
 
+    </div>
+
+    <div className={styles.FifthSection}>
+
+        <div className={styles.roadmaptitreteam}>
+
+            <h1>Team</h1>
+
+            <p className={styles.roadmapParagraphe}>But... <span className={styles.beepbop}>Beep-bop !</span> ...is the team made of gods ??</p>
+
+        </div>
+
+        <div className={styles.profilesbro}>
+
+            <div className={styles.thisismyprofilebro}>
+                        
+                <img className={styles.imagesProfil} src="https://fg65bkilumk34rpmo6odrxj2rgia3figdvxts5bq2wqknza7vi.arweave.net/-Kb3QqQujFb5F7HecON06iZANlQYdbzl0MNWgpuQfqg" alt="" />
+
+                <div className={styles.aboutMeBro}>
+
+                    <h1>Erebos</h1>
+
+                    <p>Serial entrepreneur and founder of many companies, this, Ladies and Gentlemens, is French excellence.</p>
+
+                </div>
+
+            </div>
+
+            <div className={styles.thisismyprofilebro}>
+                        
+                <img className={styles.imagesProfil} src="/images/team-profiles/coco_ghost.jpg" alt="" />
+
+                <div className={styles.aboutMeBro}>
+
+                    <h1>Co0Co</h1>
+
+                    <p>This guy kind of acts like a ghost but in real life he’s mostly a living, hard-working guy.</p>
+
+                </div>
+
+            </div>
+
+            <div className={styles.thisismyprofilebro}>
+                        
+                <img className={styles.imagesProfil} src="https://www.arweave.net/u5ULNqLqyj9vlxrm3etT9HRO5RNZ2g10AZX0miELmzk?ext=png" alt="" />
+
+                <div className={styles.aboutMeBro}>
+
+                    <h1>STIIIK</h1>
+
+                    <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
+
+                </div>
+
+            </div>
+
+            <div className={styles.thisismyprofilebro}>
+                        
+                <img className={styles.imagesProfil} src="https://www.arweave.net/u5ULNqLqyj9vlxrm3etT9HRO5RNZ2g10AZX0miELmzk?ext=png" alt="" />
+
+                <div className={styles.aboutMeBro}>
+
+                    <h1>STIIIK</h1>
+
+                    <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
+
+                </div>
+
+            </div>
+
+            <div className={styles.thisismyprofilebro}>
+                        
+                <img className={styles.imagesProfil} src="https://www.arweave.net/u5ULNqLqyj9vlxrm3etT9HRO5RNZ2g10AZX0miELmzk?ext=png" alt="" />
+
+                <div className={styles.aboutMeBro}>
+
+                    <h1>STIIIK</h1>
+
+                    <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    
     </div>
 
 </Layout>

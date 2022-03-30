@@ -248,7 +248,6 @@
     max-width: 1140px;
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 30px;
     margin-left: 40px;
     margin-right: 40px;
     /* border: 1px solid #222222; */
@@ -321,4 +320,119 @@
     flex: 1;
     flex-direction: column;
     padding: 15px;
+}
+
+/* Section n°5 Menu Principal */
+
+.FifthSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.roadmaptitreteam {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alagard";
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Faire un Hexagone :  */
+
+.hexagone {
+  position: relative;
+  width: 173.20508px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.hexagone::after {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  content: "";
+  display: block;
+  margin-top: 28.86751%;
+  padding-bottom: 86.602%;
+}
+
+.hexagonemain{
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 115.47005%;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+  -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+  transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+  z-index: 1;
+}
+
+.hexagonemainbefore{
+  content: "";
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #cccccc;
+  -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+  -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+  transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+}
+
+.hexagonecontent{
+  overflow-y: auto;
+  width: 100%;
+  display: block;
+  position: absolute;
+  visibility: visible;
+  bottom: 25%;
+  top: 25%;
+  left: 0;
+  z-index: 3;
+}
+
+.imagesProfil{
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 10px;
+    border: 1px solid #424242;
+}
+
+/* Attaque des photos de profil etc... */
+
+.profilesbro {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.aboutMeBro {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.thisismyprofilebro {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    flex: 1;
+    margin: 15px;
 }
