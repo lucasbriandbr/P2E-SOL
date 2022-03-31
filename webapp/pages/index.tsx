@@ -223,7 +223,7 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="https://fg65bkilumk34rpmo6odrxj2rgia3figdvxts5bq2wqknza7vi.arweave.net/-Kb3QqQujFb5F7HecON06iZANlQYdbzl0MNWgpuQfqg" alt="" />
+                <img className={styles.imagesProfil} src="/images/team-profiles/-Kb3QqQujFb5F7HecON06iZANlQYdbzl0MNWgpuQfqg.png" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
@@ -237,7 +237,7 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="/images/team-profiles/coco_ghost.jpg" alt="" />
+                <img className={styles.imagesProfil} src="/images/team-profiles/X9HmgFsL_400x400.jpg" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
@@ -251,11 +251,25 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="https://www.arweave.net/u5ULNqLqyj9vlxrm3etT9HRO5RNZ2g10AZX0miELmzk?ext=png" alt="" />
+                <img className={styles.imagesProfil} src="/images/team-profiles/PxlSyl.png" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
-                    <h1>STIIIK</h1>
+                    <h1>PxlSyl</h1>
+
+                    <p>Artist in his spare time, full-time artist, and apprentice-developer in the time that remains.<br/>Is he human ?</p>
+
+                </div>
+
+            </div>
+
+            <div className={styles.thisismyprofilebro}>
+                        
+                <img className={styles.imagesProfil} src="/images/team-profiles/Cqoo2Ukp_400x400.jpg" alt="" />
+
+                <div className={styles.aboutMeBro}>
+
+                    <h1>Amayegak</h1>
 
                     <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
 
@@ -265,21 +279,7 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="https://www.arweave.net/u5ULNqLqyj9vlxrm3etT9HRO5RNZ2g10AZX0miELmzk?ext=png" alt="" />
-
-                <div className={styles.aboutMeBro}>
-
-                    <h1>STIIIK</h1>
-
-                    <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
-
-                </div>
-
-            </div>
-
-            <div className={styles.thisismyprofilebro}>
-                        
-                <img className={styles.imagesProfil} src="https://www.arweave.net/u5ULNqLqyj9vlxrm3etT9HRO5RNZ2g10AZX0miELmzk?ext=png" alt="" />
+                <img className={styles.imagesProfil} src="images/team-profiles/Capture d’écran 2022-03-31 011232.png" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
