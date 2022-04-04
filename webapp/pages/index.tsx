@@ -52,25 +52,25 @@ const Index = () => (
 
     <div className={styles.SecondSection}>
 
-        <p className="marquee">
+        <p className={"marquee"}>
             
             <span>Mint planned for this summer</span>
             
             <span className='span'>Mint planned for this summer</span>
             
-            <span>Mint planned for this summer </span>
+            <span className={styles.annoncedemerde}>Mint planned for this summer </span>
             
             <span className='span'>Mint planned for this summer</span>
             
-            <span>Mint planned for this summer </span>
+            <span className={styles.annoncedemerde}>Mint planned for this summer </span>
             
             <span className='span'>Mint planned for this summer</span>
             
-            <span>Mint planned for this summer </span>
+            <span className={styles.annoncedemerde}>Mint planned for this summer </span>
             
             <span className='span'>Mint planned for this summer</span>
             
-            <span>Mint planned for this summer </span>
+            <span className={styles.annoncedemerde}>Mint planned for this summer </span>
             
             <span className='span'>Mint planned for this summer</span>
 
@@ -229,7 +229,9 @@ const Index = () => (
 
                     <h1>Erebos</h1>
 
-                    <p>Serial entrepreneur and founder of many companies, this, Ladies and Gentlemens, is French excellence.</p>
+                    <p>CEO / Dev</p>
+
+                    <p className={styles.paragrapheDescription}>Serial entrepreneur and founder of many companies, this, Ladies and Gentlemens, is French excellence.</p>
 
                 </div>
 
@@ -237,13 +239,15 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="/images/team-profiles/X9HmgFsL_400x400.jpg" alt="" />
+                <img className={styles.imagesProfil} src="/images/team-profiles/hfWC4hHbOWpQ8Vr5rg3BfQOL9TNsB7DahcV5q1aSmyQ.png" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
                     <h1>Co0Co</h1>
 
-                    <p>This guy kind of acts like a ghost but in real life he’s mostly a living, hard-working guy.</p>
+                    <p>Dev</p>
+
+                    <p className={styles.paragrapheDescription}>This guy kind of acts like a ghost but in real life he’s mostly a living, hard-working guy.</p>
 
                 </div>
 
@@ -257,7 +261,9 @@ const Index = () => (
 
                     <h1>PxlSyl</h1>
 
-                    <p>Artist in his spare time, full-time artist, and apprentice-developer in the time that remains.<br/>Is he human ?</p>
+                    <p>Artist / Dev</p>
+
+                    <p className={styles.paragrapheDescription}>Artist in his spare time, full-time artist, and apprentice-developer in the time that remains.<br/>Is he human ?</p>
 
                 </div>
 
@@ -265,13 +271,15 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="/images/team-profiles/Cqoo2Ukp_400x400.jpg" alt="" />
+                <img className={styles.imagesProfil} src="/images/team-profiles/bullish.png" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
                     <h1>Amayegak</h1>
 
-                    <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
+                    <p>Artist</p>
+
+                    <p className={styles.paragrapheDescription}>This guy is a real artist, no joke this time, you better appreciate or consequences.</p>
 
                 </div>
 
@@ -279,13 +287,15 @@ const Index = () => (
 
             <div className={styles.thisismyprofilebro}>
                         
-                <img className={styles.imagesProfil} src="images/team-profiles/Capture d’écran 2022-03-31 011232.png" alt="" />
+                <img className={styles.imagesProfil} src="images/team-profiles/08aab2a0-dfff-43c7-9493-8b5448af043f.png" alt="" />
 
                 <div className={styles.aboutMeBro}>
 
-                    <h1>STIIIK</h1>
+                    <h1>Black Eagle</h1>
 
-                    <p>Yes, you are in company of the best lookingMr.STIIIK !!!</p>
+                    <p>Dev</p>
+
+                    <p className={styles.paragrapheDescription}>This guy does everything, he’s a crazy hard worker but a little more crazy than the others.</p>
 
                 </div>
 
@@ -293,6 +303,12 @@ const Index = () => (
 
         </div>
     
+    </div>
+
+    <div className={styles.SixthFunction}>
+
+
+
     </div>
 
 </Layout>

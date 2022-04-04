@@ -83,6 +83,10 @@
     font-size: 0.75em;
 }
 
+.annoncedemerde {
+
+}
+
 /* Third section bro */
 
 .ThirdSection {
@@ -168,6 +172,7 @@
   .containerright {
   left: 0%;
   }
+  
 }
 
 .textBlur {
@@ -185,6 +190,7 @@
     padding-bottom: 30px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: "Alagard";
 }
 
@@ -329,6 +335,8 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    padding: 30px;
+    padding-bottom: 15px;
 }
 
 .roadmaptitreteam {
@@ -337,6 +345,7 @@
     padding-bottom: 30px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: "Alagard";
     padding-left: 30px;
     padding-right: 30px;
@@ -407,8 +416,8 @@
     height: auto;
     max-height: 200px;
     max-width: 200px;
+    min-width: 200px;
     border-radius: 10px;
-    border: 1px solid #424242;
 }
 
 /* Attaque des photos de profil etc... */
@@ -428,12 +437,14 @@
     flex-direction: column;
     padding: 15px;
     font-family: System,monospace;
+    text-align: center;
 }
 
 .aboutMeBro h1 {
     align-self: center;
     justify-self: center;
     text-align: center;
+    font-size: 1.25em;
 }
 
 .thisismyprofilebro {
@@ -442,4 +453,103 @@
     max-width: 200px;
     flex: 1;
     margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #424242;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.thisismyprofilebro:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #242424;
+}
+
+@media screen and (max-width: 1180px){
+
+    .profilesbro {
+        flex-direction: column;
+    }
+
+    .thisismyprofilebro {
+        flex-direction: row;
+        max-width: none;
+        border: none;
+    }
+
+    .thisismyprofilebro:hover {
+        background-color: transparent;
+        cursor: auto;
+    }
+
+    .aboutMeBro {
+        /* flex-direction: row; */
+        padding: 0px;
+        text-align: right;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .aboutMeBro h1{
+        text-align: unset;
+        align-self: unset;
+        justify-self: unset;
+    }
+
+    .imagesProfil {
+        height: 100px;
+        width: 100px;
+        min-width: 100px;
+    }
+
+    .paragrapheDescription {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+
+    .texteAboutPadding {
+        flex-direction: column;
+    }
+
+    .mainpageAboutOrigin {
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .backgroundAbout {
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .AboutText {
+        border-radius: 0px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1350px){
+
+    .SecondSection {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .Space {
+        display: none;
+    }
+
+}
+
+/* Sixieme et derniere section bro */
+
+.SixthFunction {
+
 }

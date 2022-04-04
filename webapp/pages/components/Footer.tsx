@@ -28,7 +28,7 @@ function Footer() {
 
     <div className={styles.Footer}>
       
-      <div className={styles.sectionUne}>
+      {/* <div className={styles.sectionUne}>
 
         <div className={styles.linksBlock}>
 
@@ -93,11 +93,11 @@ function Footer() {
 
         </div>
 
-      </div>
+      </div> */}
 
       <div className={styles.sectionDeux}>
 
-      <p>3333 Unique Kaijuz and 6666 Unique Baby Kaijuz Who Need A Home</p>
+      <p className={styles.paragraphefooter}>3333 Unique Kaijuz and 6666 Unique Baby Kaijuz Who Need A Home</p>
 
       <p>©LUCAS SAS 2021-2022. All rights reserved</p>
 

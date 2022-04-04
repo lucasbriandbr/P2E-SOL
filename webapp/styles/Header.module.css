@@ -81,3 +81,86 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 8px 0 0 0 #222222, -8px 0 0 0 #222222, 0 -8px 0 0 #222222, 0 8px 0 0 #222222, 6px 4px 0 0 #222222, -6px 4px 0 0 #222222, 4px -6px 0 0 #222222, 4px 6px 0 0 #222222, 6px -4px 0 0 #222222, -6px -4px 0 0 #222222, -4px -6px 0 0 #222222, -4px 6px 0 0 #222222;
 }
+
+/* menu burger */
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    background-color: #222222;
+    display: none;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 100000;
+    align-items: center;
+    cursor: pointer;
+
+    margin: 17.5px 15.5px 7.5px 23px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 8px 0 0 0 #222222, -8px 0 0 0 #222222, 0 -8px 0 0 #222222, 0 8px 0 0 #222222, 6px 4px 0 0 #222222, -6px 4px 0 0 #222222, 4px -6px 0 0 #222222, 4px 6px 0 0 #222222, 6px -4px 0 0 #222222, -6px -4px 0 0 #222222, -4px -6px 0 0 #222222, -4px 6px 0 0 #222222;
+}
+
+.burger1, .burger2, .burger3 {
+    width: 1.70rem;
+    height: 0.125rem;
+    background-color: white;
+}
+
+@media screen and (max-width: 500px){
+
+    .hamburger {
+        display: flex;
+    }
+
+    .Header {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0px;
+        backdrop-filter: none;
+        flex-direction: column;
+        height: unset;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .centerSection {
+        /* display: none; */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 7.5px;
+        transform: translateX(-200px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .centerSection button{
+        margin-top: 17.5px;
+        margin-bottom: 7.5px;
+    }
+
+    .firstSection {
+        flex: none;
+        justify-content: flex-start;
+        transform: translateX(-200px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .firstSection .menuLink {
+        margin-top: 17.5px;
+        margin-bottom: 7.5px;
+    }
+
+    .lastSection {
+        flex: none;
+        justify-content: flex-start;
+        margin-left: 7.5px;
+        transform: translateX(-200px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .lastSection .menuLink {
+        margin-top: 17.5px;
+        margin-bottom: 17.5px;
+    }
+
+}
