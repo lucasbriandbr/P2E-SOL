@@ -197,11 +197,11 @@ function Header() {
     
         <div className={`${styles.centerSectionWallet} ${isWalletOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
     
-          <button className={styles.menuLinkDisabled} disabled>Solana Mainnet</button>
+          <button className={styles.menuLink} disabled>Solana Mainnet</button>
     
-          <button className={styles.menuLinkDisabled} disabled>Balance</button>
+          <button className={styles.menuLink} disabled>Balance</button>
     
-          <button className={styles.menuLinkDisabled} disabled>Disconnect</button>
+          <button className={styles.menuLink} disabled>Disconnect</button>
     
         </div>
         

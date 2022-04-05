@@ -36,6 +36,19 @@
     justify-content: center;
 }
 
+.centerSectionWallet {
+    /* display: none; */
+    display: flex;
+    position: absolute;
+    top: 43.67px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 7.5px;
+    transform: translateX(-200px);
+    transition: all 0.5s ease-in-out;
+}
+
 .lastSection {
     display: flex;
     align-items: center;
@@ -154,6 +167,24 @@
     }
 
     .centerSection button{
+        margin-top: 17.5px;
+        margin-bottom: 7.5px;
+    }
+
+    .centerSectionWallet {
+        /* display: none; */
+        display: flex;
+        position: absolute;
+        top: 43.67px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 7.5px;
+        transform: translateX(-200px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .centerSectionWallet button{
         margin-top: 17.5px;
         margin-bottom: 7.5px;
     }
