@@ -44,6 +44,14 @@
     margin-right: 7.5px;
 }
 
+.lastSectionBro {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 7.5px;
+}
+
 .menuLink {
     color: white;
     background-color: #222222;
@@ -82,22 +90,33 @@
     box-shadow: 8px 0 0 0 #222222, -8px 0 0 0 #222222, 0 -8px 0 0 #222222, 0 8px 0 0 #222222, 6px 4px 0 0 #222222, -6px 4px 0 0 #222222, 4px -6px 0 0 #222222, 4px 6px 0 0 #222222, 6px -4px 0 0 #222222, -6px -4px 0 0 #222222, -4px -6px 0 0 #222222, -4px 6px 0 0 #222222;
 }
 
+.conteneurDeMenu {
+    display: none;
+}
+
 /* menu burger */
 
 .hamburger {
-    width: 2rem;
-    height: 2rem;
+    /* width: 2rem;
+    height: 2rem; */
+    font-family: System,monospace;
     background-color: #222222;
+    color: white;
+    padding: 0px 10px 0px 10px;
     display: none;
-    justify-content: space-around;
-    flex-flow: column nowrap;
+    /* justify-content: space-around;
+    flex-flow: column nowrap; */
     z-index: 100000;
     align-items: center;
     cursor: pointer;
 
-    margin: 17.5px 15.5px 7.5px 23px;
+    margin: 17.5px 7.5px 7.5px 23px;
     transition: all 0.3s ease-in-out;
     box-shadow: 8px 0 0 0 #222222, -8px 0 0 0 #222222, 0 -8px 0 0 #222222, 0 8px 0 0 #222222, 6px 4px 0 0 #222222, -6px 4px 0 0 #222222, 4px -6px 0 0 #222222, 4px 6px 0 0 #222222, 6px -4px 0 0 #222222, -6px -4px 0 0 #222222, -4px -6px 0 0 #222222, -4px 6px 0 0 #222222;
+}
+
+.hamburger p {
+    margin: 0px;
 }
 
 .burger1, .burger2, .burger3 {
@@ -106,10 +125,11 @@
     background-color: white;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
 
     .hamburger {
         display: flex;
+        padding: 0px 10px 0px 10px;
     }
 
     .Header {
@@ -161,6 +181,34 @@
     .lastSection .menuLink {
         margin-top: 17.5px;
         margin-bottom: 17.5px;
+    }
+
+    .lastSectionBro {
+        display: none;
+        flex: none;
+        justify-content: flex-start;
+        margin-left: 7.5px;
+        transform: translateX(-200px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .lastSectionBro .menuLink {
+        margin-top: 17.5px;
+        margin-bottom: 17.5px;
+    }
+
+    .hamburgermenuIsOpen {
+        transform: translateX(0px);
+    }
+
+    .menuLink:hover {
+        transition: all 0.3s ease-in-out;
+        opacity: 100%;
+    }
+
+    .conteneurDeMenu {
+        display: flex;
+        flex-direction: row;
     }
 
 }
