@@ -66,6 +66,8 @@
 }
 
 .menuLink {
+    display: flex;
+    flex-direction: row;
     color: white;
     background-color: #222222;
     font-family: System,monospace;
@@ -240,6 +242,15 @@
     .conteneurDeMenu {
         display: flex;
         flex-direction: row;
+    }
+
+    .mainnetActive {
+        display: flex;
+        height: 15px;
+        width: 15px;
+        border-radius: 10px;
+        background-color: green;
+        margin-right: 10px;
     }
 
 }
