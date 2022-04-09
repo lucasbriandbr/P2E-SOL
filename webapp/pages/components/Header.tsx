@@ -18,6 +18,7 @@ import { getParsedNftAccountsByOwner, isValidSolanaAddress, createConnectionConf
 import { FavouriteDomain, NAME_OFFERS_ID } from "@bonfida/name-offers";
 import { performReverseLookup } from "@bonfida/spl-name-service";
 import { PublicKey } from "@solana/web3.js";
+import { getJsonWalletAddress } from 'ethers/lib/utils';
 
 function Header() {
 
@@ -64,6 +65,8 @@ function Header() {
           //On attend que la connection au Wallet soit effective
 
           if (provider.isConnected == true) {
+
+            setHamburger();
 
             //si le provider est connecté
             
@@ -177,6 +180,7 @@ function Header() {
   //récupérer les éventuels noms de domaines détenus par le wallet
 
   const findFavoriteDomainName = async (owner: PublicKey, connection: solanaWeb3.Connection) => {
+
     try {
       const [favKey] = await FavouriteDomain.getKey(NAME_OFFERS_ID,new PublicKey(owner));
   
@@ -185,9 +189,13 @@ function Header() {
       const reverse = await performReverseLookup(connection,favourite.nameAccount);
   
       return reverse;
+
     } catch (err) {
+
       // console.log(err);
+
     }
+
   };
 
   //Retour de la barre de Header
@@ -201,12 +209,6 @@ function Header() {
         <div className={styles.conteneurDeMenu}>
 
           <div className={styles.hamburger} onClick={setHamburger}>
-
-            {/* <div className={styles.burger1}/>
-
-            <div className={styles.burger2}/>
-
-            <div className={styles.burger3}/> */}
 
             <p>Menu</p>
 
@@ -273,8 +275,16 @@ function Header() {
         {connected === true && walletAdress !== '' ?
     
         <div className={`${styles.lastSectionBro} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
-          
-          <button className={styles.menuLink}>{walletAdress.substring(0,4)}...{walletAdress.substring(walletAdress.length-4,walletAdress.length)}</button>
+            
+            {connected === true && bonfidaDomain !== '' ?
+            
+            <p className={styles.menuLink}>{bonfidaDomain.replace(bonfidaDomain[0], bonfidaDomain[0].toUpperCase())}</p>
+
+            :
+
+            <p className={styles.menuLink}>{walletAdress.substring(0,4)}...{walletAdress.substring(walletAdress.length-4,walletAdress.length)}</p>
+
+            }
           
         </div>
 

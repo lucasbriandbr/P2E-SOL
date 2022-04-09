@@ -8,6 +8,8 @@ import Layout from "./components/Layout";
 
 // élements de la page
 
+import { walletAdress } from "./components/Header";
+
 // import FirstSection from "./mainpage-components/FirstSection";
 // import SecondSection from "./mainpage-components/SecondSection";
 // import ThirdSection from "./mainpage-components/ThirdSection";
