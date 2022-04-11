@@ -33,7 +33,7 @@ function Header() {
 
   const router = useRouter()
   
-  function changeUrl(url) {
+  function changeUrl(url: string) {
     router.push(url, undefined, { shallow: true })
   }
 
