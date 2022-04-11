@@ -19,6 +19,8 @@ import { FavouriteDomain, NAME_OFFERS_ID } from "@bonfida/name-offers";
 import { performReverseLookup } from "@bonfida/spl-name-service";
 import { PublicKey } from "@solana/web3.js";
 
+declare const window: any;
+
 function Header() {
 
   const [walletAdress, setWalletAdress] = useState('');
