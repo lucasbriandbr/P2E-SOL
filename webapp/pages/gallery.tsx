@@ -2,6 +2,18 @@
 
 import Layout from "../pages/components/Layout";
 
-const GalleryView = props => <Layout>{`Gallery View`}</Layout>;
+const GalleryView = () => (
+
+    <Layout>
+
+        <div>
+
+
+
+        </div>
+        
+    </Layout>
+
+);
 
 export default GalleryView;

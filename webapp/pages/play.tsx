@@ -2,6 +2,18 @@
 
 import Layout from "../pages/components/Layout";
 
-const PlayView = props => <Layout>{`Play View`}</Layout>;
+const PlayView = () => (
+
+    <Layout>
+
+        <div>
+
+
+
+        </div>
+        
+    </Layout>
+
+);
 
 export default PlayView;
