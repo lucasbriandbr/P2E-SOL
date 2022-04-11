@@ -105,9 +105,9 @@ function Header() {
 
         } catch (err) {
 
-          //On attrappe les erreurs éventuelles
+          if (err instanceof Error) {
 
-          if (err.code === 4001) {
+            console.error("Erreur : "+err);
 
           }
 
@@ -172,7 +172,11 @@ function Header() {
 
     } catch (error) {
 
-      // console.log(error);
+      if (error instanceof Error) {
+
+        console.error("Erreur : "+error);
+
+      }
 
     }
 
@@ -193,7 +197,11 @@ function Header() {
 
     } catch (err) {
 
-      // console.log(err);
+      if (err instanceof Error) {
+
+        console.error("Erreur : "+err);
+
+      }
 
     }
 
