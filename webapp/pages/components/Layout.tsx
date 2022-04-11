@@ -1,8 +1,9 @@
 // components/Layout.js
 
 import styles from "../../styles/Layout.module.css"
+import { FunctionComponent } from 'react';
 
-const Layout = props => (
+const Layout: FunctionComponent<{ hello: string }> = props => (
   <div className={styles.layoutStyle}>
     <div className={styles.contentPage}>
       {props.children}
