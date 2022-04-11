@@ -48,8 +48,6 @@ function Header() {
       //si "solana" est détecté dans l'objet window : 
 
       const provider = window.solana;
-      setProvider(provider);
-      // console.log(myProvider);
 
       //on instaure cet objet en tant que provider
 
@@ -126,7 +124,7 @@ function Header() {
 
   async function phantomDisconnect() {
 
-    myProvider.disconnect();
+    window.solana.disconnect();
 
     setConnected(false);
 
