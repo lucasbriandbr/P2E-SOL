@@ -6,7 +6,7 @@ import Layout from "../pages/components/Layout";
 
 const MintView = () => (
 
-    <Layout>
+    <Layout hello="Mint">
 
         <div>
 

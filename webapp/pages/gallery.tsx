@@ -4,7 +4,7 @@ import Layout from "../pages/components/Layout";
 
 const GalleryView = () => (
 
-    <Layout>
+    <Layout hello="Gallery">
 
         <div>
 

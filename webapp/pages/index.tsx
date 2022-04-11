@@ -7,7 +7,7 @@ import Layout from "./components/Layout";
 
 const Index = () => (
 
-    <Layout>
+    <Layout hello="Homepage">
 
         <div className={styles.Space}></div>
 

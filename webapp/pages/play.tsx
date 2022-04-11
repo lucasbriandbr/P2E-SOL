@@ -4,7 +4,7 @@ import Layout from "../pages/components/Layout";
 
 const PlayView = () => (
 
-    <Layout>
+    <Layout hello="Play">
 
         <div>
 
