@@ -1,9 +1,15 @@
 import { useState } from "react";
 
-export default function useAuthRoute () {
+function WalletBalanceGlobalState(number) {
 
-    const [isAuth, setIsAuth] = useState(false);
-    
-    return {isAuth}
-  
+  if( typeof(number) == 'undefined' ){
+
+    const [ balance, setBalance ] = useState(125);
+
+    return balance;
+
   }
+
+}
+
+export default WalletBalanceGlobalState;
