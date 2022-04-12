@@ -2,18 +2,30 @@
 
 import Layout from "../pages/components/Layout";
 
-const GalleryView = () => (
+//import de la database
 
-    <Layout hello="Gallery">
+import { useEffect } from "react";
 
-        <div>
+function GalleryView() {
 
+    useEffect(() => {
 
+    });
 
-        </div>
-        
-    </Layout>
+    return (
 
-);
+        <Layout hello="Gallery">
+
+            <div>
+                
+                <p>Hello World !!! Here is the Gallery Page.</p>
+
+            </div>
+            
+        </Layout>
+
+    );
+
+};
 
 export default GalleryView;

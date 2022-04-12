@@ -2,18 +2,28 @@
 
 import Layout from "../pages/components/Layout";
 
-const PlayView = () => (
+import { useEffect } from "react";
 
-    <Layout hello="Play">
+function PlayView() {
 
-        <div>
+    useEffect(() => {
 
+    });
 
+    return (
 
-        </div>
-        
-    </Layout>
+        <Layout hello="Play">
 
-);
+            <div>
+                
+                <p>Hello World !!! Here is the Mint Page.</p>
+
+            </div>
+            
+        </Layout>
+
+    );
+
+};
 
 export default PlayView;

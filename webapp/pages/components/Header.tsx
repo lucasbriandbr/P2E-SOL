@@ -1,7 +1,7 @@
 // components/Header.js
 
-import styles1 from '../../styles/Header.module.css'
-import { useRouter } from 'next/router'
+import styles from '../../styles/Header.module.css';
+import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
 //librairie solana-web3.js
@@ -209,13 +209,13 @@ function Header() {
 
   return (
 
-    <div className={styles1.Element}>
+    <div className={styles.Element}>
 
-      <div className={styles1.Header}>
+      <div className={styles.Header}>
 
-        <div className={styles1.conteneurDeMenu}>
+        <div className={styles.conteneurDeMenu}>
 
-          <div className={styles1.hamburger} onClick={setHamburger}>
+          <div className={styles.hamburger} onClick={setHamburger}>
 
             <p>Menu</p>
 
@@ -223,7 +223,7 @@ function Header() {
           
           {connected === true && walletAdress !== '' ?
 
-          <div className={styles1.hamburger} onClick={setWallet}>
+          <div className={styles.hamburger} onClick={setWallet}>
             
             {connected === true && bonfidaDomain !== '' ?
             
@@ -245,31 +245,39 @@ function Header() {
 
         </div>
         
-        <div className={`${styles1.firstSection} ${hamburgerOpen ? `${styles1.hamburgermenuIsOpen}` : ``}`}>
+        <div className={`${styles.firstSection} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
     
-          <button className={styles1.menuLink} onClick={() => changeUrl('/')}>Home</button>
+          <button className={styles.menuLink} onClick={() => changeUrl('/')}>Home</button>
     
         </div>
     
-        <div className={`${styles1.centerSection} ${hamburgerOpen ? `${styles1.hamburgermenuIsOpen}` : ``}`}>
+        <div className={`${styles.centerSection} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
+          
+          {connected === true && walletAdress !== '' ?
+          
+          <button className={styles.menuLink} onClick={() => changeUrl('/mint')} >Mint</button>
+          
+          :
+          
+          <button className={styles.menuLinkDisabled} onClick={() => changeUrl('/mint')} disabled>Mint</button>
+
+          }
     
-          <button className={styles1.menuLink} onClick={() => changeUrl('/mint')} >Mint</button>
+          <button className={styles.menuLink} onClick={() => changeUrl('/gallery')}>Gallery</button>
     
-          <button className={styles1.menuLinkDisabled} onClick={() => changeUrl('/gallery')} disabled>Gallery</button>
-    
-          <button className={styles1.menuLinkDisabled} onClick={() => changeUrl('/play')} disabled>Play</button>
+          <button className={styles.menuLink} onClick={() => changeUrl('/play')} >Play</button>
     
         </div>
         
         {connected === true && walletAdress !== '' ?
     
-        <div className={`${styles1.centerSectionWallet} ${isWalletOpen ? `${styles1.hamburgermenuIsOpen}` : ``}`}>
+        <div className={`${styles.centerSectionWallet} ${isWalletOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
     
-          <button className={styles1.menuLink} disabled><span className={styles1.mainnetActive}></span> Mainnet</button>
+          <button className={styles.menuLink} disabled><span className={styles.mainnetActive}></span> Mainnet</button>
     
-          <button className={styles1.menuLink} disabled>{balance.substring(0,balance.indexOf('.')+3)} SOL</button>
+          <button className={styles.menuLink} disabled>{balance.substring(0,balance.indexOf('.')+3)} SOL</button>
     
-          <button className={styles1.menuLink} onClick={phantomDisconnect}>Disconnect</button>
+          <button className={styles.menuLink} onClick={phantomDisconnect}>Disconnect</button>
     
         </div>
         
@@ -281,15 +289,15 @@ function Header() {
 
         {connected === true && walletAdress !== '' ?
     
-        <div className={`${styles1.lastSectionBro} ${hamburgerOpen ? `${styles1.hamburgermenuIsOpen}` : ``}`}>
+        <div className={`${styles.lastSectionBro} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
             
             {connected === true && bonfidaDomain !== '' ?
             
-            <p className={styles1.menuLink}>{bonfidaDomain.replace(bonfidaDomain[0], bonfidaDomain[0].toUpperCase())}</p>
+            <p className={styles.menuLink}>{bonfidaDomain.replace(bonfidaDomain[0], bonfidaDomain[0].toUpperCase())}</p>
 
             :
 
-            <p className={styles1.menuLink}>{walletAdress.substring(0,4)}...{walletAdress.substring(walletAdress.length-4,walletAdress.length)}</p>
+            <p className={styles.menuLink}>{walletAdress.substring(0,4)}...{walletAdress.substring(walletAdress.length-4,walletAdress.length)}</p>
 
             }
           
@@ -297,9 +305,9 @@ function Header() {
 
         :
     
-        <div className={`${styles1.lastSection} ${hamburgerOpen ? `${styles1.hamburgermenuIsOpen}` : ``}`}>
+        <div className={`${styles.lastSection} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
     
-          <button className={styles1.menuLink} onClick={getProvider}>Connect</button>
+          <button className={styles.menuLink} onClick={getProvider}>Connect</button>
           
         </div>
 

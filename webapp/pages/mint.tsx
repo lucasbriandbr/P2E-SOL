@@ -4,18 +4,28 @@
 
 import Layout from "../pages/components/Layout";
 
-const MintView = () => (
+import { useEffect } from "react";
 
-    <Layout hello="Mint">
+function MintView() {
 
-        <div>
+    useEffect(() => {
 
+    });
 
+    return (
 
-        </div>
-        
-    </Layout>
+        <Layout hello="Mint">
 
-);
+            <div>
+                
+                <p>Hello World !!! Here is the Mint Page.</p>
+
+            </div>
+            
+        </Layout>
+
+    );
+
+};
 
 export default MintView;
