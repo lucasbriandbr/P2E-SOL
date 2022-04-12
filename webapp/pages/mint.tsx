@@ -26,6 +26,16 @@ function MintView() {
                 <div className={styles.Space}></div>
 
                 <p className={styles.h1}>{date}</p>
+
+                {current.getMonth()+1 >= 7 ?
+
+                <p>Nous sommes en Juillet</p>
+                
+                :
+
+                <p>Nous sommes dans un mois avant Juillet, le mint n'est pas éligible</p>
+                
+                }
             
             </div>
             
