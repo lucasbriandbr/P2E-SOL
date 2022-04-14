@@ -27,11 +27,11 @@ function Header() {
   const [bonfidaDomain, setBonfidaDomain] = useState('');
   const [connected, setConnected] = useState(false);
   const [myProvider, setProvider] = useState();
-  const [balance, setBalance] = useState('');
+  const [balance, setBalance] = useState('--');
 
   useEffect(() => {
 
-  });
+  }, []);
 
   const router = useRouter()
   

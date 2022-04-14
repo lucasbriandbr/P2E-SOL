@@ -6,16 +6,47 @@ import styles from '../styles/Mint.module.css'
 
 import Layout from "../pages/components/Layout";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+declare const window: any;
 
 function MintView() {
 
+    let current = new Date();
+
+    const [ dateSecond, setDateSecond ] = useState(current);
+
+    const [ connected, setConnected ] = useState(false);
+
     useEffect(() => {
 
-    });
+        setInterval(askIfSolanaConnected, 1000);
 
-    const current = new Date();
-    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+        if ( window.solana.isConnected === true ) {
+
+            setConnected(true);
+
+        } else {
+            
+            setConnected(false);
+            
+        }
+
+    }, []);
+
+    function askIfSolanaConnected() {
+
+        if ( window.solana.isConnected === true ) {
+
+            setConnected(true);
+
+        } else {
+            
+            setConnected(false);
+            
+        }
+
+    }
 
     return (
 
@@ -25,15 +56,13 @@ function MintView() {
             
                 <div className={styles.Space}></div>
 
-                <p className={styles.h1}>{date}</p>
+                {connected === true ?
 
-                {current.getMonth()+1 >= 7 ?
-
-                <p>Nous sommes en Juillet</p>
+                <p>Connecté</p>
                 
                 :
 
-                <p>Nous sommes dans un mois avant Juillet, le mint n'est pas éligible</p>
+                <p>Pas connecté</p>
                 
                 }
             
