@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 //librairie solana-web3.js
 
 import * as solanaWeb3 from '@solana/web3.js';
-import { clusterApiUrl, Connection, LAMPORTS_PER_SOL } from '@solana/web3.js';
+import { clusterApiUrl, Connection, LAMPORTS_PER_SOL, Transaction, SystemProgram } from '@solana/web3.js';
 
 //Librairie pour la détection des NFT présents dans le wallet.
 
@@ -42,12 +42,6 @@ function Mintbaby() {
 
             //on passe l'adresse du wallet dans la fonction
 
-            // let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl("mainnet-beta"));
-
-            // let accountTokens = await connection.getBalance(window.solana.publicKey);
-
-            // setBalance((accountTokens/solanaWeb3.LAMPORTS_PER_SOL).toString());
-
         } else {
 
             setConnected(false);
@@ -82,7 +76,29 @@ function Mintbaby() {
 
         if (solanaValid === true) {
 
-            console.log('adresse valide bro');
+            let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl("mainnet-beta"));
+
+            // let accountTokens = await connection.getBalance(window.solana.publicKey);
+
+            // setBalance((accountTokens/solanaWeb3.LAMPORTS_PER_SOL).toString());
+            
+            if (theMint > 0) {
+
+                const message = `We'll send u ${theMint} nft's in this wallet so be sure you wanna pay ${theMint*1} SOL. You won't regret bro, be ready for the game haha`;
+    
+                const encodedMessage = new TextEncoder().encode(message);
+                
+                const signedMessage = await window.solana.signMessage(encodedMessage, "utf8");
+            
+            } else {
+
+                const message = `Just cause i know you wont read hahaha`;
+    
+                const encodedMessage = new TextEncoder().encode(message);
+                
+                const signedMessage = await window.solana.signMessage(encodedMessage, "utf8");
+
+            }
 
         }
 
@@ -99,6 +115,8 @@ function Mintbaby() {
                     <div className={styles.ConnectedIsTrue}>
                         
                         <p>Compteur : 120/120</p>
+
+                        <p>Price : {theMint} SOL</p>
 
                         <div className={styles.theMintCounter}>
                             

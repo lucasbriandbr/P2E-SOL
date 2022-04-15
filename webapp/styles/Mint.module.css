@@ -36,7 +36,7 @@
     width: 100%;
     height: 100vh;
 
-    background-image: url("../public/images/sneak-peeks/toxic_jungle.gif");
+    background-image: url("../public/images/Ipp25S-dDTBm8n7KnCByDJdyev56-HYAyM4m0wZ5wDM.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 15px 5px 15px;
+    padding: 15px 30px 15px 30px;
     color: black;
     background-color: white;
     margin: 0px;
@@ -94,15 +94,10 @@
     border-radius: 0px 10px 10px 0px;
 }
 
-.theMintCounter p:first-child:hover, .theMintCounter p:last-child:hover {
-    opacity: 50%;
-    transition: all 0.3s ease-in-out;
-}
-
 .mintbutton {
     background-color: white;
     border-radius: 10px;
     color: black;
-    padding: 5px 15px 5px 15px;
+    padding: 15px 30px 15px 30px;
     cursor: pointer;
 }
