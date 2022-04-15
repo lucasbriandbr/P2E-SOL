@@ -1,72 +1,26 @@
 // pages/mint.tsx
 
-import styles from '../styles/Mint.module.css'
-
-//Composants de la page
-
+import styles from '../styles/Mint.module.css';
 import Layout from "../pages/components/Layout";
+import { useEffect, useState } from 'react';
+import Mintbaby from "./components/mintbaby";
 
-import { useEffect, useState } from "react";
+//librairie solana-web3.js
 
-declare const window: any;
+import * as solanaWeb3 from '@solana/web3.js';
+import { clusterApiUrl, Connection, LAMPORTS_PER_SOL } from '@solana/web3.js';
+
+//Librairie pour la détection des NFT présents dans le wallet.
+
+import { getParsedNftAccountsByOwner, isValidSolanaAddress, createConnectionConfig } from "@nfteyez/sol-rayz";
 
 function MintView() {
-
-    let current = new Date();
-
-    const [ dateSecond, setDateSecond ] = useState(current);
-
-    const [ connected, setConnected ] = useState(false);
-
-    useEffect(() => {
-
-        setInterval(askIfSolanaConnected, 1000);
-
-        if ( window.solana.isConnected === true ) {
-
-            setConnected(true);
-
-        } else {
-            
-            setConnected(false);
-            
-        }
-
-    }, []);
-
-    function askIfSolanaConnected() {
-
-        if ( window.solana.isConnected === true ) {
-
-            setConnected(true);
-
-        } else {
-            
-            setConnected(false);
-            
-        }
-
-    }
 
     return (
 
         <Layout hello="Mint">
-
-            <div className={styles.MintSection}>
             
-                <div className={styles.Space}></div>
-
-                {connected === true ?
-
-                <p>Connecté</p>
-                
-                :
-
-                <p>Pas connecté</p>
-                
-                }
-            
-            </div>
+            <Mintbaby/>
             
         </Layout>
 

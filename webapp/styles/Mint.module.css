@@ -13,18 +13,18 @@
     src:url("../public/fonts/PressStart2P-vaV7.ttf") format("truetype");
 }
 
-.Space {
-    display: flex;
-    height: 70px;
-    width: 100%;
-}
-
 @media screen and (max-width: 550px){
 
     .Space {
         display: none;
     }
 
+}
+
+.Space {
+    display: flex;
+    height: 70px;
+    width: 100%;
 }
 
 .MintSection {
@@ -36,15 +36,73 @@
     width: 100%;
     height: 100vh;
 
-    background-image: url("../public/images/15ede0ac-6283-49cc-827e-1495d1e34ee7.gif");
+    background-image: url("../public/images/sneak-peeks/toxic_jungle.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
-.h1 {
+.MintWidget {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
-    font-family: System,monospace;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+}
 
+.ConnectedIsTrue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theMintCounter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.theMintCounter p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px 5px 15px;
+    color: black;
+    background-color: white;
+    margin: 0px;
+}
+
+.theMintCounter p:first-child, .theMintCounter p:last-child {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.theMintCounter p:first-child {
+    border-right: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.theMintCounter p:last-child {
+    border-left: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.theMintCounter p:first-child:hover, .theMintCounter p:last-child:hover {
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.mintbutton {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
 }
