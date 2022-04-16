@@ -49,9 +49,9 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
+    font-family: System,monospace;
 }
 
 .ConnectedIsTrue {
@@ -59,6 +59,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 30px;
 }
 
 .theMintCounter {
@@ -67,6 +69,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    width: 100%;
+    max-width: 1140px;
 }
 
 .theMintCounter p {
@@ -77,11 +81,12 @@
     color: black;
     background-color: white;
     margin: 0px;
+    flex: 1;
 }
 
 .theMintCounter p:first-child, .theMintCounter p:last-child {
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .theMintCounter p:first-child {
@@ -94,10 +99,58 @@
     border-radius: 0px 10px 10px 0px;
 }
 
+.theMintCounter p:first-child:hover, .theMintCounter p:last-child:hover, .mintbutton:hover {
+    opacity: 50%;
+    transition: all 0.2s ease;
+}
+
 .mintbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
     color: black;
     padding: 15px 30px 15px 30px;
     cursor: pointer;
+    width: 100%;
+    max-width: 1140px;
+    transition: all 0.2s ease;
+}
+
+.error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 15px 30px 15px 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.success {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(0, 128, 0, 0.5);
+    padding: 15px 30px 15px 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.error img, .success img {
+    display: flex;
+    height: 1.25em;
+    width: auto;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
 }

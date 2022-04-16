@@ -11,6 +11,7 @@ import { clusterApiUrl, Connection, LAMPORTS_PER_SOL, Transaction, SystemProgram
 //Librairie pour la détection des NFT présents dans le wallet.
 
 import { getParsedNftAccountsByOwner, isValidSolanaAddress, createConnectionConfig, } from "@nfteyez/sol-rayz";
+import { empty } from '@prisma/client/runtime';
 
 declare const window: any;
   
@@ -25,6 +26,9 @@ function Mintbaby() {
     const [ balance, setBalance ] = useState('--');
 
     const [ theMint, setTheMint ] = useState(0);
+    const [ error, setError ] = useState('');
+    const [ success, setSuccess ] = useState('');
+    const [ message, setMessage ] = useState(false);
 
     useEffect(() => {
 
@@ -76,13 +80,13 @@ function Mintbaby() {
 
         if (solanaValid === true) {
 
-            let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl("mainnet-beta"));
+            let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl("mainnet-beta"), 'confirmed');
 
-            // let accountTokens = await connection.getBalance(window.solana.publicKey);
+            let accountTokens = await connection.getBalance(window.solana.publicKey);
 
-            // setBalance((accountTokens/solanaWeb3.LAMPORTS_PER_SOL).toString());
+            setBalance((accountTokens/solanaWeb3.LAMPORTS_PER_SOL).toString());
             
-            if (theMint > 0) {
+            if (theMint > 0 && parseFloat(balance) > theMint) {
 
                 const message = `We'll send u ${theMint} nft's in this wallet so be sure you wanna pay ${theMint*1} SOL. You won't regret bro, be ready for the game haha`;
     
@@ -92,11 +96,15 @@ function Mintbaby() {
             
             } else {
 
-                const message = `Just cause i know you wont read hahaha`;
-    
-                const encodedMessage = new TextEncoder().encode(message);
-                
-                const signedMessage = await window.solana.signMessage(encodedMessage, "utf8");
+                if (theMint <= 0) {
+                    
+                    setError("Vous devez selectionner au moins 1 token");
+
+                } else {
+
+                    setError("Vous n'avez pas les fonds pour faire cela");
+
+                }
 
             }
 
@@ -113,10 +121,6 @@ function Mintbaby() {
                 {connected === true ?
                 
                     <div className={styles.ConnectedIsTrue}>
-                        
-                        <p>Compteur : 120/120</p>
-
-                        <p>Price : {theMint} SOL</p>
 
                         <div className={styles.theMintCounter}>
                             
@@ -128,7 +132,7 @@ function Mintbaby() {
 
                         </div>
                         
-                        <p className={styles.mintbutton} onClick={theMintFunction}>Claim / Mint</p>
+                        <p className={styles.mintbutton} onClick={theMintFunction}>Mint</p>
                         
                     </div>
 
@@ -139,6 +143,26 @@ function Mintbaby() {
                 }
 
             </div>
+
+                {error != '' ?
+                
+                    <p className={styles.error}><img src='/icon/x-mark.png'/>{error}</p>
+
+                :
+
+                    ''
+
+                }
+
+                {success != '' ?
+
+                    <p className={styles.success}><img src='/icon/check-mark.png'/>{success}</p>
+                
+                :
+                
+                    ''
+                
+                }
 
         </div>
 
