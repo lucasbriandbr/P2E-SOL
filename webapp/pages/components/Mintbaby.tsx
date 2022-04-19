@@ -170,4 +170,4 @@ function Mintbaby() {
 
 }
 
-export default Mintbaby;
+export default Mintbaby
