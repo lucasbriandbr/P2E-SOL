@@ -53,7 +53,7 @@ export default function Admin() {
         <Layout hello="Admin">
 
             <div>
-                 
+                
                 <p>Hello World !!! Here is the ADMIN Page.</p>
 
             </div>
