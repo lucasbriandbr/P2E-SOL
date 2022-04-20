@@ -1,4 +1,3 @@
-import { REVERSE_LOOKUP_CLASS } from "@bonfida/spl-name-service";
 import { useRouter } from 'next/router';
 import { useEffect, useState } from "react"
 import Layout from "./components/Layout"

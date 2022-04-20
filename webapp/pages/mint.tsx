@@ -1,9 +1,9 @@
 // pages/mint.tsx
 
-import styles from '../styles/Mint.module.css';
-import Layout from "../pages/components/Layout";
-import { useEffect, useState } from 'react';
-import Mintbaby from "./components/mintbaby";
+import styles from '../styles/Mint.module.css'
+import Layout from "../pages/components/Layout"
+import { useEffect, useState } from 'react'
+import Mintbaby from "./components/Mintbaby"
 
 //librairie solana-web3.js
 
