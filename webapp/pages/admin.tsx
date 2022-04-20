@@ -37,7 +37,7 @@ export default function Admin() {
     function askIfAdressIsAdmin(props: string) {
         for (let index = 0; index < posts.length; index++) {
             if(props === posts[index].adress) {
-                setTimeout(() => {setLoader(false)}, 10000)
+                setTimeout(() => {setLoader(false)}, 1700)
                 return(posts[index].name)
             } else {
                 if (posts[index].state === posts.length) {
