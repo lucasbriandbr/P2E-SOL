@@ -1,12 +1,12 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app"
 
 // élements de la page
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   
   return (
     
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       
       <Header/>
       
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       
       <Footer/>
 
@@ -23,5 +23,3 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 
 }
-
-export default MyApp

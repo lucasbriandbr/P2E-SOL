@@ -2,11 +2,16 @@
   "name": "webapp",
   "version": "0.1.0",
   "private": true,
-  "scripts": { 
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prod": "next export"
+    "prod": "next export",
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
   },
   "dependencies": {
     "@bonfida/name-offers": "^0.0.1",
@@ -25,7 +30,6 @@
     "@types/react": "17.0.42",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
-    "prisma": "^3.12.0",
     "typescript": "4.6.2"
   }
 }
