@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from "react"
 import Layout from "./components/Layout"
 import { posts } from "./constantes/posts"
+import { PrismaClient } from '@prisma/client'
 
 declare const window: any;
 
