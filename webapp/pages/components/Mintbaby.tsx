@@ -11,7 +11,7 @@ import { clusterApiUrl, Connection, LAMPORTS_PER_SOL, Transaction, SystemProgram
 //Librairie pour la détection des NFT présents dans le wallet.
 
 import { getParsedNftAccountsByOwner, isValidSolanaAddress, createConnectionConfig, } from "@nfteyez/sol-rayz";
-import { empty } from '@prisma/client/runtime';
+// import { empty } from '@prisma/client/runtime';
 
 declare const window: any;
   
