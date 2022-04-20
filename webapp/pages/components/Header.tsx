@@ -15,9 +15,10 @@ import { getParsedNftAccountsByOwner, isValidSolanaAddress, createConnectionConf
 
 //librairie pour s'occupper des noms de domaines en .sol
 
-import { FavouriteDomain, NAME_OFFERS_ID } from "@bonfida/name-offers";
-import { performReverseLookup } from "@bonfida/spl-name-service";
-import { PublicKey } from "@solana/web3.js";
+import { FavouriteDomain, NAME_OFFERS_ID } from "@bonfida/name-offers"
+import { performReverseLookup } from "@bonfida/spl-name-service"
+import { PublicKey } from "@solana/web3.js"
+import { posts } from "../constantes/posts"
 
 declare const window: any;
 
@@ -37,6 +38,18 @@ function Header() {
   
   function changeUrl(url: string) {
     router.push(url, undefined, { shallow: true })
+  }
+
+  function askIfAdressIsAdmin(props: string) {
+      for (let index = 0; index < posts.length; index++) {
+          if(props === posts[index].adress) {
+              return(posts[index].name)
+          } else {
+              if (posts[index].state === posts.length) {
+                  return(false)
+              }
+          }
+      }
   }
 
   async function getProvider() {
@@ -266,6 +279,12 @@ function Header() {
           <button className={styles.menuLink} onClick={() => changeUrl('/gallery')}>Gallery</button>
     
           <button className={styles.menuLink} onClick={() => changeUrl('/play')} >Play</button>
+          
+          {connected === true && askIfAdressIsAdmin(walletAdress) ?
+          <button className={styles.menuLink} onClick={() => changeUrl('/admin')} >Admin</button>
+          :
+          ""
+          }
     
         </div>
         
