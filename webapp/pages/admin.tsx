@@ -9,6 +9,8 @@ declare const window: any;
 export default function Admin() {
 
     const router = useRouter()
+    
+    const prisma = new PrismaClient()
 
     const [ connected, setConnected ] = useState(false)
     const [ walletAdress, setWalletAdress ] = useState('')
