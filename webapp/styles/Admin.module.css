@@ -1,0 +1,13 @@
+.classeLoader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imageLoading {
+    height: 200px;
+    width: auto;
+}

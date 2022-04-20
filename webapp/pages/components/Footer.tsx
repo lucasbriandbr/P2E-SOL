@@ -33,9 +33,9 @@ function Footer() {
 
       <div className={styles.sectionDeux}>
 
-      <p className={styles.paragraphefooter}>3333 Unique Kaijuz and 6666 Unique Baby Kaijuz Who Need A Home</p>
+      <p className={styles.paragraphefooter}>1111 Unique Mechas from Andromeda Galaxy trying to stole the Earth</p>
 
-      <p>©LUCAS SAS 2021-{date}. All rights reserved</p>
+      <p>©AndoMechas 2021-{date}. All rights reserved</p>
 
       </div>
 
