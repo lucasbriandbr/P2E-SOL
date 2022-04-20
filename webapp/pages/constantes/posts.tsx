@@ -6,3 +6,7 @@ export const posts = [
     { adress:"EyW77qKWQkD6X81nwV3u6GLYxPPTNEe2zP8wGfvRgHre", state:5, name:"PxlSyl" },
     { adress:"2HSCUbaKjmv2xSYJRWJDfHtauEmP4TEAAoGwWZ25zMrJ", state:6, name:"Black Eagle" }
 ]
+
+export default function lengthBro() {
+    return(posts.length)
+}
