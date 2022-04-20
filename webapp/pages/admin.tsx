@@ -64,7 +64,9 @@ export default function Admin() {
 
                     <div>
 
-                        <p>Bienvenue {askIfAdressIsAdmin(window.solana.publicKey.toString())}</p>
+                        <p>Bienvenue sur l&apos;espace administrateur de {askIfAdressIsAdmin(window.solana.publicKey.toString())}</p>
+
+                        <p>Utilises l&apos;espace admistrateur à bon escient, espèce de fou furieux que tu es. Je te connais grand fou.</p>
 
                     </div>
 
