@@ -1,5 +1,5 @@
 export default function Sales() {
     return(
-        <p>SALUT SALOPE</p>
+        <p>SALES GROS BG</p>
     )
 }

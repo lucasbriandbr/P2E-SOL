@@ -36,6 +36,8 @@
     width: 100%;
     background-color: blueviolet;
     border: 1px solid white;
+    flex-direction: column;
+    align-items: center;
 }
 
 .MenuBro p {

@@ -1,8 +1,12 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 import { useEffect, useState } from "react"
 import Layout from "./components/Layout"
 import { posts } from "./constantes/posts"
 import styles from "../styles/Admin.module.css"
+
+import Sales from "./admin_pages/sales"
+import Messagerie from "./admin_pages/messagerie"
+import Whitelist from "./admin_pages/whitelist"
 
 declare const window: any;
 
@@ -21,9 +25,15 @@ export default function Admin() {
 
     const tabs = [
         {label:"Sales", state:0},
-        {label:"Option-2", state:1},
-        {label:"Option-3", state:2}
+        {label:"Whitelist", state:1},
+        {label:"Messagerie", state:2}
     ]
+
+    const renderStrategy = {
+        0 : Sales(),
+        1 : Whitelist(),
+        2 : Messagerie()
+    }
 
     useEffect(() => {
 
@@ -53,6 +63,10 @@ export default function Admin() {
                 }
             }
         }
+    }
+
+    function render() {
+        return renderStrategy[state]
     }
   
     function changeUrl(url: string) {
@@ -88,6 +102,8 @@ export default function Admin() {
                         <div className={styles.vueChangeante}>
 
                             <h3>{tabs[state].label}</h3>
+
+                            {render()}
 
                         </div>
                     
