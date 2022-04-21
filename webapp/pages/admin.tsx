@@ -66,7 +66,7 @@ export default function Admin() {
     }
 
     function render() {
-        return renderStrategy[state]
+        return renderStrategy[state as keyof typeof renderStrategy]
     }
   
     function changeUrl(url: string) {
@@ -93,7 +93,7 @@ export default function Admin() {
                             
                             {tabs.map((tab,index) => {
                                 return(
-                                    <p key={`tab_${index}`} onClick={() => {setState((tab.state))}} >{tab.label}</p>
+                                    <a href={`#${tab.label}`} key={`tab_${index}`} onClick={() => {setState((tab.state))}} >{tab.label}</a>
                                 )
                             })}
 

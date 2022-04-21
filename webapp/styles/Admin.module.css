@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-.MenuBro p {
+.MenuBro a {
     cursor: pointer;
     margin: 5px;
     padding: 10px;
@@ -51,19 +51,50 @@
     transition: all 0.2s ease-in-out;
 }
 
-.MenuBro p:hover {
+.MenuBro a:hover, .MenuBro a:active, .MenuBro a:focus {
     transition: all 0.2s ease-in-out;
     opacity: 50%;
 }
 
 .vueChangeante h3 {
     display: flex;
-    height: 70px;
+    min-height: 70px;
     width: 100%;
     background-color: black;
     margin: 0px;
     border-bottom: 1px solid white;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.whitelistGestion {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    transition: all 0.25s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.messagerieGestion {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    transition: all 0.25s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.salesGestion {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    transition: all 0.25s ease-in-out;
     align-items: center;
     justify-content: center;
 }

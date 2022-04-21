@@ -1,5 +1,9 @@
+import styles from "../../styles/Admin.module.css"
+
 export default function Messagerie() {
     return(
-        <p>ET CA C&apos;EST LA MESSAGERIE</p>
+        <div className={styles.messagerieGestion}>
+            <p>CA C EST LA MESSAGERIE FRR</p>
+        </div>
     )
 }
