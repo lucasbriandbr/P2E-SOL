@@ -15,8 +15,15 @@ export default function Admin() {
     const [ timer, setTimer ] = useState(10)
     const [ realTimer, setRealTimer ] = useState(timer)
     const [ walletAdress, setWalletAdress ] = useState('')
+    const [state, setState] = useState(0)
 
     const [ admin, setAdmin ] = useState(false)
+
+    const tabs = [
+        {label:"Sales", state:0},
+        {label:"Option-2", state:1},
+        {label:"Option-3", state:2}
+    ]
 
     useEffect(() => {
 
@@ -69,22 +76,18 @@ export default function Admin() {
                         <div className={styles.MenuBro}>
 
                             <h3>AndroMechas</h3>
-
-                            <p>Sales</p>
-
-                            <p>Option</p>
-
-                            <p>Option</p>
-
-                            <p>Option</p>
-
-                            <p>Option</p>
+                            
+                            {tabs.map((tab,index) => {
+                                return(
+                                    <p key={`tab_${index}`} onClick={() => {setState((tab.state))}} >{tab.label}</p>
+                                )
+                            })}
 
                         </div>
 
                         <div className={styles.vueChangeante}>
 
-                            <h3>$ - Sales - $</h3>
+                            <h3>{tabs[state].label}</h3>
 
                         </div>
                     
