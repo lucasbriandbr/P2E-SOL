@@ -56,19 +56,39 @@ export default function Admin() {
 
         <Layout hello="Admin">
 
+            <div className={styles.Space}></div>
+
             {connected === true && askIfAdressIsAdmin(window.solana.publicKey.toString()) !== false ?
 
             <div className={styles.classeLoader}>
 
                 {loader === false ?
 
-                    <div>
+                    <>
 
-                        <p>Bienvenue sur l&apos;espace administrateur de {askIfAdressIsAdmin(window.solana.publicKey.toString())}</p>
+                        <div className={styles.MenuBro}>
 
-                        <p>Utilises l&apos;espace admistrateur à bon escient, espèce de fou furieux que tu es. Je te connais grand fou.</p>
+                            <h3>AndroMechas</h3>
 
-                    </div>
+                            <p>Sales</p>
+
+                            <p>Option</p>
+
+                            <p>Option</p>
+
+                            <p>Option</p>
+
+                            <p>Option</p>
+
+                        </div>
+
+                        <div className={styles.vueChangeante}>
+
+                            <h3>$ - Sales - $</h3>
+
+                        </div>
+                    
+                    </>
 
                 :
 
@@ -82,7 +102,7 @@ export default function Admin() {
 
             <div className={styles.classeLoader}>
 
-                <p>Erreur - Veuillez vous identifier pour accéder à cette partie du site</p>
+                <p>An error has occured</p>
 
             </div>
 
