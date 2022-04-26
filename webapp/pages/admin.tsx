@@ -37,6 +37,7 @@ export default function Admin() {
 
     useEffect(() => {
 
+        router.push('/admin#Sales')
         setInterval(askIfSolanaConnected, 100)
 
     }, [])
