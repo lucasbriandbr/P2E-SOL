@@ -1,11 +1,12 @@
 // pages/gallery.tsx
 
-import Layout from "../pages/components/Layout";
+import Layout from "../pages/components/Layout"
 
 //import de la database
 
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect } from "react"
+import { useState } from "react"
+import styles from '../styles/Gallery.module.css'
 
 function GalleryView() {
 
@@ -23,11 +24,11 @@ function GalleryView() {
 
         <Layout hello="Gallery">
 
-            <div>
+            <div className={styles.firstSection}>
                 
                 <p>Hello World !!! Here is the Gallery Page.</p>
 
-                <p>{OS}</p>
+                <p>And here is your OS : {OS}</p>
 
             </div>
             

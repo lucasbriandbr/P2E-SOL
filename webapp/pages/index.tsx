@@ -15,7 +15,7 @@ const Index = () => (
 
             <div className={styles.MainTitle}>
 
-                <h1 className={styles.collectionTitle}>AndroMechas</h1>
+                <h1 className={styles.collectionTitle}>Andromeda Mechs</h1>
 
                 <div className={styles.collectionLogos}>
 

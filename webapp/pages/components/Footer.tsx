@@ -33,9 +33,9 @@ function Footer() {
 
       <div className={styles.sectionDeux}>
 
-      <p className={styles.paragraphefooter}>1111 Unique Mechas from Andromeda Galaxy trying to stole the Earth</p>
+        <p className={styles.paragraphefooter}>1111 Unique Mechas from Andromeda Galaxy trying to conquer the Earth</p>
 
-      <p>©AndoMechas 2021-{date}. All rights reserved</p>
+        <p>© Andromeda Mechs ; 2021-{date}. All rights reserved</p>
 
       </div>
 
