@@ -13,3 +13,4 @@
 //     props: post,
 //   }
 // }
+export{}
