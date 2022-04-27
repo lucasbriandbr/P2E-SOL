@@ -33,7 +33,7 @@ function Footer() {
 
       <div className={styles.sectionDeux}>
 
-        <p className={styles.paragraphefooter}>1111 Unique Mechas from Andromeda Galaxy trying to conquer the Earth</p>
+        <p className={styles.paragraphefooter}>3333 Unique Pods from Andromeda Galaxy trying to steal our ressources</p>
 
         <p>© Andromeda Mechs ; 2021-{date}. All rights reserved</p>
 
