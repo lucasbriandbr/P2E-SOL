@@ -27,7 +27,7 @@ const Index = () => (
                         <Image src={'/icon/magiceden-icon.png'} alt='magiceden-icon' width={35} height={35}/>
                     </a>
 
-                    <a href={'https://discord.gg/Wycyn7bUYq'} className={styles.linkIcon}>
+                    <a href={'https://discord.gg/q84ME9JFB7'} className={styles.linkIcon}>
                         <Image src={'/icon/discorde-icon.png'} alt='discord-icon' width={35} height={35}/>
                     </a>
 
