@@ -4,6 +4,7 @@ import styles from '../styles/Mint.module.css'
 import Layout from "../pages/components/Layout"
 import { useEffect, useState } from 'react'
 import Mintbaby from "./components/Mintbaby"
+import { useRouter } from "next/router"
 
 //librairie solana-web3.js
 
@@ -15,6 +16,14 @@ import { clusterApiUrl, Connection, LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { getParsedNftAccountsByOwner, isValidSolanaAddress, createConnectionConfig } from "@nfteyez/sol-rayz";
 
 function MintView() {
+
+    const router = useRouter()
+
+    useEffect(() => {
+
+        router.push('/')
+
+    });
 
     return (
 

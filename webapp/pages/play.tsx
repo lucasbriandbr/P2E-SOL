@@ -3,10 +3,15 @@
 import Layout from "../pages/components/Layout";
 import { useEffect } from "react";
 import styles from '../styles/Play.module.css'
+import { useRouter } from "next/router"
 
 function PlayView() {
 
+    const router = useRouter()
+
     useEffect(() => {
+
+        router.push('/')
 
     });
 
