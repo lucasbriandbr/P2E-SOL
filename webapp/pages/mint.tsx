@@ -5,6 +5,7 @@ import Layout from "../pages/components/Layout"
 import { useEffect, useState } from 'react'
 import Mintbaby from "./components/Mintbaby"
 import { useRouter } from "next/router"
+import Head from 'next/head'
 
 //librairie solana-web3.js
 
@@ -28,6 +29,14 @@ function MintView() {
     return (
 
         <Layout hello="Mint">
+
+            <Head>
+
+                <title>Play - Andromeda Mechs</title>
+
+                <meta name="description" content="Yes, like on Amazon, you can ask for a Mech. He's coming from Andromeda to your wallet." />
+
+            </Head>
             
             <Mintbaby/>
             

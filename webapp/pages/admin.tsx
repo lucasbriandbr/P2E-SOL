@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Layout from "./components/Layout"
 import { posts } from "./constantes/posts"
 import styles from "../styles/Admin.module.css"
+import Head from 'next/head'
 
 import Sales from "./admin_pages/sales"
 import Messagerie from "./admin_pages/messagerie"
@@ -77,6 +78,14 @@ export default function Admin() {
     return (
 
         <Layout hello="Admin">
+
+            <Head>
+
+                <title>Admin - Andromeda Mechs</title>
+
+                <meta name="description" content="Admin room for accepted wallets" />
+
+            </Head>
 
             <div className={styles.Space}></div>
 

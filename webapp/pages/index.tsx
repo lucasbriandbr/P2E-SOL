@@ -13,9 +13,9 @@ const Index = () => (
 
         <Head>
 
-        <title>Andromeda Mechs</title>
+            <title>Home - Andromeda Mechs</title>
 
-        <meta name="description" content="3333 Mechs from Andromeda Galaxy" />
+            <meta name="description" content="3333 Mechs from Andromeda Galaxy" />
 
         </Head>
 

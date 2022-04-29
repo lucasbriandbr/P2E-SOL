@@ -8,6 +8,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import styles from '../styles/Gallery.module.css'
 import { useRouter } from "next/router"
+import Head from "next/head"
 
 function GalleryView() {
 
@@ -29,6 +30,14 @@ function GalleryView() {
     return (
 
         <Layout hello="Gallery">
+
+            <Head>
+
+                <title>Gallery - Andromeda Mechs</title>
+
+                <meta name="description" content="Welcome in the Hangar, you can see all the pods from here" />
+
+            </Head>
 
             <div className={styles.firstSection}>
                 

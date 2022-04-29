@@ -4,6 +4,7 @@ import Layout from "../pages/components/Layout";
 import { useEffect } from "react";
 import styles from '../styles/Play.module.css'
 import { useRouter } from "next/router"
+import Head from "next/head";
 
 function PlayView() {
 
@@ -18,6 +19,14 @@ function PlayView() {
     return (
 
         <Layout hello="Play">
+
+            <Head>
+
+                <title>Play - Andromeda Mechs</title>
+
+                <meta name="description" content="Enter the game, try to fight with Human army." />
+
+            </Head>
 
             <div className={styles.firstSection}>
                 
