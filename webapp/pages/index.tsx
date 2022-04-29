@@ -11,6 +11,14 @@ const Index = () => (
 
     <Layout hello="Homepage">
 
+        <Head>
+
+        <title>Andromeda Mechs</title>
+
+        <meta name="description" content="3333 Mechs from Andromeda Galaxy" />
+
+        </Head>
+
         <div className={styles.Space}></div>
 
         <div className={styles.FirstSection}>
