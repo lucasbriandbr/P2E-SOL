@@ -99,7 +99,7 @@ export default function Admin() {
 
                         <div className={styles.MenuBro}>
 
-                            <h3>AndroMechas</h3>
+                            <h3>Andromeda Mechs</h3>
                             
                             {tabs.map((tab,index) => {
                                 return(
