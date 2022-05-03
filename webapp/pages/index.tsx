@@ -102,7 +102,9 @@ const Index = () => (
                         <div className={styles.textBlur}>
 
                             <h4>Summer 2022</h4>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                            <p>Launch of the First Gen : &quot;Pods&quot;.</p>
+                            <p>They have been sent by a mysterious population that we know nothing about to steal samples of terrestrial biodiversity.</p>
+                            <p>We believe their planet was destroyed by a nuclear war.</p>
                     
                         </div>
 
@@ -112,15 +114,51 @@ const Index = () => (
 
                 <div className={styles.containerright}>
 
+                    <div id={styles.automn2022}>
+
+                        <div className={styles.textBlur}>
+
+                            <h4>Automn 2022</h4>
+                            <p>Launch of the Second Gen : &quot;Fighters&quot;.</p>
+                            <p>Now that our mysterious enemy knows we’re vulnerable and our resources are viable, he’s moving on to the second phase of his plan : conquer.</p>
+                            <p>Astronomers have observed amazing signals in the sky, like signals from spaceships...</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className={styles.containerleft}>
+
                     <div id={styles.winter2022}>
 
                         <div className={styles.textBlur}>
 
                             <h4>Winter 2022</h4>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                            <p>Launch of the Third Gen : &quot;Tanks&quot;.</p>
+                            <p>Despite their monumental efforts to assault the world’s largest metropolises, the battle is fierce against the ground forces !</p>
+                            <p>Unfortunately for our dear blue planet, it seems that space factories are running at full speed to mount our perfect enemy.</p>
                     
                         </div>
 
+                    </div>
+
+                </div>
+
+                <div className={styles.containerright}>
+
+                    <div id={styles.spring2023}>
+
+                        <div className={styles.textBlur}>
+
+                            <h4>Spring 2023</h4>
+                            <p>Launch of the DAO and voting system, via the &quot;DAO&quot; menu at <a href='https://www.andromedamechs.com/DAO'>andromedamechs.com</a>.</p>
+                            <p>The community may propose actions to be carried out with the funds of the DAO wallet.</p>
+                            <p>People will be able to vote anonymously by yes or no, and the team will work on the proposal if it is adopted.</p>
+                    
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -132,7 +170,10 @@ const Index = () => (
                         <div className={styles.textBlur}>
 
                             <h4>Summer 2023</h4>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                            <p>Launch of the Play-To-Earn game</p>
+                            <p>Maybe the earth didn&apos;t survived the assault...</p>
+                            <p>But maybe she did. And you always need more ressources. Your population needs you to survive.</p>
+                            <p>For the first time, you&apos;ll be the bad guy in the story.</p>
                     
                         </div>
 
@@ -142,15 +183,33 @@ const Index = () => (
 
                 <div className={styles.containerright}>
 
-                    <div id={styles.winter2023}>
+                    <div id={styles.autumn2023}>
 
                         <div className={styles.textBlur}>
 
-                            <h4>Winter 2023</h4>
-                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    
+                            <h4>Autumn 2023</h4>
+                            <p>Launch of Investments in On-Chain Start-ups</p>
+                            <p>Some young start-ups will be selected to recieve funds from the DAO Wallet.</p>
+                            <p>The companies will be selected by the team, however the DAO can also submit proposals which will then be studied by our team, whether they are small or large projects.</p>
+                            <p>This is a more advanced form of Launchpad.</p>
+
                         </div>
                         
+                    </div>
+
+                </div>
+
+                <div className={styles.containerleft}>
+
+                    <div id={styles.laterthan2023}>
+
+                        <div className={styles.textBlur}>
+
+                            <h4>Coming later...</h4>
+                            <p>Updated soon, we&apos;re working really fast.</p>
+                    
+                        </div>
+
                     </div>
 
                 </div>
@@ -236,7 +295,7 @@ const Index = () => (
 
                         <p>CEO / Dev</p>
 
-                        <p className={styles.paragrapheDescription}>Serial entrepreneur and founder of many companies, this, Ladies and Gentlemens, is French excellence.</p>
+                        {/* <p className={styles.paragrapheDescription}>Serial entrepreneur and founder of many companies, this, Ladies and Gentlemens, is French excellence.</p> */}
 
                     </div>
 
@@ -252,7 +311,7 @@ const Index = () => (
 
                         <p>Dev</p>
 
-                        <p className={styles.paragrapheDescription}>This guy kind of acts like a ghost but in real life he’s mostly a living, hard-working guy.</p>
+                        {/* <p className={styles.paragrapheDescription}>This guy kind of acts like a ghost but in real life he’s mostly a living, hard-working guy.</p> */}
 
                     </div>
 
@@ -268,7 +327,7 @@ const Index = () => (
 
                         <p>Artist / Dev</p>
 
-                        <p className={styles.paragrapheDescription}>Artist in his spare time, full-time artist, and apprentice-developer in the time that remains.<br/>Is he human ?</p>
+                        {/* <p className={styles.paragrapheDescription}>Artist in his spare time, full-time artist, and apprentice-developer in the time that remains.<br/>Is he human ?</p> */}
 
                     </div>
 
@@ -284,7 +343,7 @@ const Index = () => (
 
                         <p>Artist</p>
 
-                        <p className={styles.paragrapheDescription}>This guy is a real artist, no joke this time, you better appreciate or consequences.</p>
+                        {/* <p className={styles.paragrapheDescription}>This guy is a real artist, no joke this time, you better appreciate or consequences.</p> */}
 
                     </div>
 
@@ -300,7 +359,7 @@ const Index = () => (
 
                         <p>Dev</p>
 
-                        <p className={styles.paragrapheDescription}>This guy does everything, he’s a crazy hard worker but a little more crazy than the others.</p>
+                        {/* <p className={styles.paragrapheDescription}>This guy does everything, he’s a crazy hard worker but a little more crazy than the others.</p> */}
 
                     </div>
 

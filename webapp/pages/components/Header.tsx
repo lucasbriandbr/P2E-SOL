@@ -308,7 +308,7 @@ function Header() {
 
         {connected === true && walletAdress !== '' ?
     
-        <div className={`${styles.lastSectionBro} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}>
+        <div className={`${styles.lastSectionBro} ${hamburgerOpen ? `${styles.hamburgermenuIsOpen}` : ``}`}  onClick={setWallet}>
             
             {connected === true && bonfidaDomain !== '' ?
             

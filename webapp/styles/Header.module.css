@@ -36,17 +36,21 @@
     justify-content: center;
 }
 
-.centerSectionWallet {
-    /* display: none; */
+.centerSectionWallet {    
     display: flex;
     position: absolute;
-    top: 43.67px;
+    top: 53.67px;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 7.5px;
-    transform: translateX(-200px);
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 7.5px;
+    transform: translateX(200px);
     transition: all 0.5s ease-in-out;
+}
+
+.centerSectionWallet button{
+    margin-top: 17.5px;
+    margin-bottom: 7.5px;
 }
 
 .lastSection {
@@ -130,6 +134,19 @@
     box-shadow: 8px 0 0 0 #222222, -8px 0 0 0 #222222, 0 -8px 0 0 #222222, 0 8px 0 0 #222222, 6px 4px 0 0 #222222, -6px 4px 0 0 #222222, 4px -6px 0 0 #222222, 4px 6px 0 0 #222222, 6px -4px 0 0 #222222, -6px -4px 0 0 #222222, -4px -6px 0 0 #222222, -4px 6px 0 0 #222222;
 }
 
+.mainnetActive {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.hamburgermenuIsOpen {
+    transform: translateX(0px);
+}
+
 .hamburger p {
     margin: 0px;
 }
@@ -181,7 +198,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 7.5px;
+        left: 7.5px;
         transform: translateX(-200px);
         transition: all 0.5s ease-in-out;
     }
@@ -242,15 +259,6 @@
     .conteneurDeMenu {
         display: flex;
         flex-direction: row;
-    }
-
-    .mainnetActive {
-        display: flex;
-        height: 15px;
-        width: 15px;
-        border-radius: 10px;
-        background-color: green;
-        margin-right: 10px;
     }
 
 }

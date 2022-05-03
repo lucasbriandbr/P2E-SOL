@@ -35,7 +35,7 @@ function Footer() {
 
         <p className={styles.paragraphefooter}>3333 Unique Pods from Andromeda Galaxy trying to steal our ressources</p>
 
-        <p>© Andromeda Mechs ; 2021-{date}. All rights reserved</p>
+        <p>© Andromeda Mechs - 2021-{date} - All rights reserved</p>
 
       </div>
 

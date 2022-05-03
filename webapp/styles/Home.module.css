@@ -199,7 +199,15 @@
 }
 
 #summer2022 {
-    background-image: url('../public/images/a-lRljfH5WY91x4rhXXr2Y8amg5SmyNfrEo7ZUk40iI.png');
+    background-image: url('../public/images/backgrounds/norm_back2.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#automn2022 {
+    background-image: url('../public/images/backgrounds/norm_back7.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,7 +215,7 @@
 }
 
 #winter2022 {
-    background-image: url('../public/images/Ipp25S-dDTBm8n7KnCByDJdyev56-HYAyM4m0wZ5wDM.png');
+    background-image: url('../public/images/backgrounds/Alien_Jungle.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -222,8 +230,32 @@
     border-radius: 10px;
 }
 
-#winter2023 {
-    background-image: url('../public/images/4419.png');
+#spring2023 {
+    background-image: url('../public/images/backgrounds/norm_back6.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#summer2023 {
+    background-image: url('../public/images/backgrounds/Mecha_Dome_City.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#autumn2023 {
+    background-image: url('../public/images/backgrounds/Sunny_Landscape.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#laterthan2023 {
+    background-color: #424242;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
