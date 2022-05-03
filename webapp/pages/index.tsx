@@ -45,7 +45,7 @@ const Index = () => (
                         <Image src={'/icon/medium-icon.png'} alt='medium-icon' width={35} height={35}/>
                     </a>
 
-                    <a href={'https://twitter.com/AndromedaMechs'} className={styles.linkIcon}>
+                    <a href={'https://twitter.com/AndroMechs'} className={styles.linkIcon}>
                         <Image src={'/icon/twitter-icon.png'} alt='twitter-icon' width={35} height={35}/>
                     </a>
 
